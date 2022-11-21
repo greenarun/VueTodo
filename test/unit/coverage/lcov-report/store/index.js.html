@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for store/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">store</a> index.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import Vue from 'vue'</span>
+<span class="cstat-no" title="statement not covered" >import Vuex from 'vuex'</span>
+<span class="cstat-no" title="statement not covered" >import axios from 'axios'</span>
+&nbsp;
+Vue.use(Vuex)
+&nbsp;
+export default new Vuex.Store({
+  state: {
+    todos: [],
+    loading: true
+  },
+  getters: {
+    todos: <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state =&gt; </span>state.todos</span>
+  },
+  mutations: <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >{</span></span></span></span></span></span>
+    SET_LOADING (state, flag) {
+<span class="cstat-no" title="statement not covered" >      state.loading = flag</span>
+    },
+    SET_TODOS (state, todos) {
+<span class="cstat-no" title="statement not covered" >      state.todos = todos</span>
+    },
+    ADD_TODO (state, todoObject) {
+<span class="cstat-no" title="statement not covered" >      state.todos.push(todoObject)</span>
+    },
+    DELETE_TODO (state, todo) {
+      var todos = <span class="cstat-no" title="statement not covered" >state.todos</span>
+<span class="cstat-no" title="statement not covered" >      todos.splice(todos.indexOf(todo), 1)</span>
+    },
+    UPDATE_TODO (state, todo) {
+      var todos = <span class="cstat-no" title="statement not covered" >state.todos</span>
+<span class="cstat-no" title="statement not covered" >      todos.forEach(<span class="fstat-no" title="function not covered" >(</span>element, index) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        if (element.id === todo.id) {</span>
+<span class="cstat-no" title="statement not covered" >          todos[index] = todo</span>
+        }
+      })
+<span class="cstat-no" title="statement not covered" >      state.todos = todos</span>
+    },
+    CLEAR_NEW_TODO (state) {
+<span class="cstat-no" title="statement not covered" >      state.newTodo = ''</span>
+    }
+  },
+  actions: <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >{</span></span></span></span></span>
+    getTodos ({ commit }) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      commit('SET_LOADING', true)</span>
+<span class="cstat-no" title="statement not covered" >      axios</span>
+        .get('http://localhost:3000/todos')
+        .then(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >list =&gt; </span>list.data)</span>
+        .then(<span class="fstat-no" title="function not covered" >todos =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >          commit('SET_TODOS', todos)</span>
+<span class="cstat-no" title="statement not covered" >          commit('SET_LOADING', false)</span>
+        })
+    },
+    addTodoItem ({ commit }, todoItem) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      if (!todoItem) {</span>
+<span class="cstat-no" title="statement not covered" >        return</span>
+      }
+      const todo = <span class="cstat-no" title="statement not covered" >{</span>
+        title: todoItem,
+        completed: false,
+        id: randomId()
+      }
+<span class="cstat-no" title="statement not covered" >      axios.post('http://localhost:3000/todos', todo).then(<span class="fstat-no" title="function not covered" >() =&gt; </span>{</span>
+<span class="cstat-no" title="statement not covered" >        commit('ADD_TODO', todo)</span>
+      })
+    },
+    deleteTodoItem ({ commit }, todo) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      axios.delete(`http://localhost:3000/todos/${todo.id}`).then(<span class="fstat-no" title="function not covered" >() =&gt; </span>{</span>
+<span class="cstat-no" title="statement not covered" >        commit('DELETE_TODO', todo)</span>
+      })
+    },
+    updateTodoItem ({ commit }, todo) <span class="cstat-no" title="statement not covered" >{</span>
+      const updatedTodo = <span class="cstat-no" title="statement not covered" >todo</span>
+<span class="cstat-no" title="statement not covered" >      updatedTodo.completed = !updatedTodo.completed</span>
+<span class="cstat-no" title="statement not covered" >      axios.put(`http://localhost:3000/todos/${todo.id}`, updatedTodo).then(<span class="fstat-no" title="function not covered" >() =&gt; </span>{</span>
+<span class="cstat-no" title="statement not covered" >        commit('UPDATE_TODO', todo)</span>
+      })
+    },
+    clearNewTodo ({ commit }) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      commit('CLEAR_NEW_TODO')</span>
+    }
+&nbsp;
+  }
+})
+&nbsp;
+function <span class="fstat-no" title="function not covered" >randomId () {</span>
+  const d = <span class="cstat-no" title="statement not covered" >new Date()</span>
+  let ms = <span class="cstat-no" title="statement not covered" >d.valueOf()</span>
+<span class="cstat-no" title="statement not covered" >  return ms</span>
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 21 2022 22:22:28 GMT+0800 (Singapore Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

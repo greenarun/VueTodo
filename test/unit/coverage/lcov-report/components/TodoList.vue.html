@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/TodoList.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">components</a> TodoList.vue
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"> &lt;template&gt;
+  &lt;div class="container"&gt;
+    &lt;template&gt;
+          &lt;template&gt;
+            &lt;div class="inputContainer"&gt;
+              &lt;el-input v-model="newTodo" size="mini" @keyup.enter="addTodo"&gt;
+              &lt;/el-input&gt;
+              &lt;el-button type="primary" size="mini" @click="addItem" :disabled="newTodo.length === 0"&gt;Add&lt;/el-button&gt;
+            &lt;/div&gt;
+          &lt;/template&gt;
+          &lt;template&gt;
+            &lt;div v-for="todo in todos" :key="todo.id" class="listItem" v-if="todos.length"&gt;
+            &lt;span class="textContent"&gt;&lt;span class="checkboxContainer"&gt;&lt;el-checkbox :checked="todo.completed" @change="updateItemStatus(todo)"&gt;&lt;/el-checkbox&gt;&lt;/span&gt;{{todo.title}}&lt;/span&gt;
+            &lt;span class="deleteContainer" @click="deleteItem(todo)"&gt;&lt;i class="el-icon-close"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;/template&gt;
+          &lt;template v-if="todos.length ===0"&gt;
+            &lt;div class="listItem empty"&gt;No items&lt;/div&gt;
+          &lt;/template&gt;
+    &lt;/template&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+export default {
+  name: 'ListTodo',
+  data () {
+    return {
+      newTodo: ''
+    }
+  },
+&nbsp;
+  created () {
+    this.$store.dispatch('getTodos')
+  },
+&nbsp;
+  computed: {
+    todos () {
+      return this.$store.getters.todos
+    }
+  },
+&nbsp;
+  methods: {
+    addItem () {
+      this.$store.dispatch('addTodoItem', this.newTodo)
+      this.$store.dispatch('clearNewTodo')
+      this.newTodo = ''
+    },
+<span class="fstat-no" title="function not covered" >    updateItemStatus (todo) {</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch('updateTodoItem', todo)</span>
+    },
+<span class="fstat-no" title="function not covered" >    deleteItem (todo) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log('ddd', todo)</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch('deleteTodoItem', todo)</span>
+    }
+  }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style&gt;
+.container {height: 100%;width:1000px;margin:0 auto;}
+.inputContainer{padding:20px 0;background:#fff;border:1px solid #afc4da;overflow: hidden;}
+.el-input--mini{width:86%;float: left;margin-left:2%;}
+.el-input--mini .el-input__inner{padding:20px;border:1px solid #afc4da}
+.el-button--mini{padding:14px 25px;float: left;margin-left:2%}
+.el-icon-close{color:#409eff;font-weight: bold;}
+.listItem{padding:20px;background-color: #fff;border:1px solid #afc4da;border-top:0 none;text-align: left;position: relative;cursor: pointer;}
+.listItem .textContent{white-space: nowrap;width: 95%;overflow: hidden;text-overflow: ellipsis;display: block;}
+.listItem.empty{text-align: center;}
+.listItem.empty:hover{background-color: #fff;}
+.checkboxContainer{padding:0 20px}
+.deleteContainer{position: absolute;right:40px;visibility: hidden;top:22px;}
+.listItem:hover .deleteContainer{visibility: visible;}
+.listItem:hover{background-color: #ecf2f7;}
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 21 2022 20:16:16 GMT+0800 (Singapore Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
